@@ -5,11 +5,11 @@ var bodyParser = require('body-parser');
 
 //Firebase Real Time
 var firebase = require("firebase-admin");
-var serviceAccount = require("./book-kung.json");
+var serviceAccount = require("./bookshopAPI");
 
 firebase.initializeApp({
   credential: firebase.credential.cert(serviceAccount),
-  databaseURL: "https://book-kung.firebaseio.com"
+  databaseURL: "https://book-kung.firebaseio.com/"
 });
 
 var db = firebase.database();
