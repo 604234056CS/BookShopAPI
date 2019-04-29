@@ -9,7 +9,7 @@ var serviceAccount = require("./bookshopAPI");
 
 firebase.initializeApp({
   credential: firebase.credential.cert(serviceAccount),
-  databaseURL: "https://book-kung.firebaseio.com/"
+  databaseURL: "https://book-kung.firebaseio.com"
 });
 
 var db = firebase.database();
